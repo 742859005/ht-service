@@ -1,0 +1,15 @@
+server:
+  port: 8000
+  servlet:
+    context-path: /
+spring:
+  application:
+    name: ht-service
+  thymeleaf:
+    encoding: UTF-8
+    mode: LEGACYHTML5
+    cache: false
+eureka:
+  client:
+    service-url:
+      defualtZone: http://localhost:8761/eureka/
