@@ -258,16 +258,21 @@
 
                             <ul class="nav flex-column sub-menu">
 
-                                <li class="nav-item"><a class="nav-link" href="javascript:false" onclick="">商品列表</a></li>
+                                <li class="nav-item"><a class="nav-link" href="javascript:false" onclick="goods()">商品列表</a></li>
                                 <li class="nav-item"><a class="nav-link" href="javascript:false" onclick=''>商品出售</a></li>
                                 <li class="nav-item"><a class="nav-link" href="javascript:false" onclick="">回收站</a></li>
                             </ul>
                         </div>
                     </li>
+                    <script>
+                        function goods() {
+                            $("#iframe").attr("stc","")
+                        }
+                    </script>
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false"
                            aria-controls="ui-basic">
-                            <span class="menu-title">订单管理</span>
+                            <span class="menu-title">订单模块</span>
                             <i class="menu-arrow"></i>
                             <i class="mdi mdi-account-box menu-icon"></i>
                         </a>
@@ -275,11 +280,6 @@
                             <ul class="nav flex-column sub-menu">
                                 <li class="nav-item"><a class="nav-link" href="javascript:false" onclick="">待付款</a></li>
                                 <li class="nav-item"><a class="nav-link" href="javascript:false" onclick="">待发货</a></li>
-                                <li class="nav-item"><a class="nav-link" href="javascript:false" onclick="">待收货</a></li>
-                                <li class="nav-item"><a class="nav-link" href="javascript:false" onclick="">待评价</a></li>
-                                <li class="nav-item"><a class="nav-link" href="javascript:false" onclick="">待退款</a></li>
-                                <li class="nav-item"><a class="nav-link" href="javascript:false" onclick="">已退款</a></li>
-                                <li class="nav-item"><a class="nav-link" href="javascript:false" onclick="">完成的订单</a></li>
                             </ul>
                         </div>
                     </li>
